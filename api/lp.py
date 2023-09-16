@@ -16,7 +16,7 @@ def licensePlate():
 
     # load models
     coco_model = YOLO('yolov8n.pt')
-    rf = Roboflow(api_key="ZoySy5pETrjjxDdeNkek")
+    rf = Roboflow(api_key="IVPAy5WjFH83nJwqjiTP")
     project = rf.workspace().project("license-plate-recognition-rxg4e")
     license_plate_detector = project.version(4).model
 

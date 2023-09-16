@@ -8,76 +8,17 @@ import React, { useState, useEffect } from "react";
 /* @client */
 export default function Home() {
   // useEffect(() => {
-  //   const imgElement = document.getElementById(
-  //     "realtime-video"
-  //   ) as HTMLImageElement;
-  //   let timeoutId: NodeJS.Timeout;
-
-  //   async function fetchImage() {
-  //     const response = await fetch("http://127.0.0.1:5000/video");
-  //     const blob = await response.blob();
-  //     if (imgElement) {
-  //       imgElement.src = URL.createObjectURL(blob);
+  //   async function runStartScript() {
+  //     try {
+  //       await startScript();
+  //       console.log("Script started successfully");
+  //     } catch (error) {
+  //       console.error("Error starting script:", error);
   //     }
-
-  //     timeoutId = setTimeout(fetchImage, 100); // fetch every 100ms
   //   }
 
-  //   fetchImage(); // Start the loop
-
-  //   return () => {
-  //     if (timeoutId) {
-  //       clearTimeout(timeoutId); // Clean up timeout
-  //     }
-  //   };
-  // }, []);
-
-  // const fileInputRef = useRef<HTMLInputElement>(null);
-
-  // const handleUploadClick = () => {
-  //   if (fileInputRef.current) {
-  //     fileInputRef.current.click();
-  //   }
-  // };
-
-  // const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   const file = e.target.files?.[0];
-  //   if (file) {
-  //     await uploadVideo(file);
-  //   }
-  // };
-
-  // const handleDownloadClick = async () => {
-  //   await downloadVideo();
-  // };
-
-  // const handleStartClick = async () => {
-  //   await startScript();
-  // };
-
-  // const handleStopClick = async () => {
-  //   await stopScript();
-  // };
-
-  //   <input
-  //   type="file"
-  //   ref={fileInputRef}
-  //   style={{ display: "none" }}
-  //   onChange={handleFileChange}
-  // />
-  // <button onClick={handleUploadClick}>Upload Video</button>
-  // <button onClick={handleDownloadClick}>Download Video</button>
-  // <button onClick={handleStartClick}>Start Script</button>
-  // <button onClick={handleStopClick}>Stop Script</button>
-  // <div className="video-container">
-  //   <img
-  //     id="realtime-video"
-  //     src="http://127.0.0.1:5000/video"
-  //     alt="Real-time Video"
-  //     width="100"
-  //     height="100"
-  //   />
-  // </div>
+  //   runStartScript();
+  // }, []); // Empty dependency array ensures this runs once on mount
 
   const videos = [
     {
