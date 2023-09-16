@@ -9,6 +9,11 @@ from utils.visualize import visual
 import csv
 from utils.add_missing_data import interpolate_bounding_boxes
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 # USER UPLOAD LP - USE - WORKING
 
 def licensePlate(filepath):
@@ -18,7 +23,7 @@ def licensePlate(filepath):
 
     # load models
     coco_model = YOLO('yolov8n.pt')
-    rf = Roboflow(api_key="IVPAy5WjFH83nJwqjiTP")
+    rf = Roboflow(api_key=os.getenv('API_KEY'))
     project = rf.workspace().project("license-plate-recognition-rxg4e")
     license_plate_detector = project.version(4).model
 

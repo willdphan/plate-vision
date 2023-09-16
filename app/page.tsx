@@ -7,19 +7,6 @@ import React, { useState, useEffect } from "react";
 
 /* @client */
 export default function Home() {
-  // useEffect(() => {
-  //   async function runStartScript() {
-  //     try {
-  //       await startScript();
-  //       console.log("Script started successfully");
-  //     } catch (error) {
-  //       console.error("Error starting script:", error);
-  //     }
-  //   }
-
-  //   runStartScript();
-  // }, []); // Empty dependency array ensures this runs once on mount
-
   const videos = [
     {
       src: "app/public/sample.mp4",

@@ -7,6 +7,11 @@ from util import get_car, read_license_plate, write_csv
 from roboflow import Roboflow
 import easyocr
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 # LICENSE PLATE RECOGNITION SCRIPT W/DEFAULT VID - NOT IN USE
 
 def licensePlate():
@@ -16,7 +21,7 @@ def licensePlate():
 
     # load models
     coco_model = YOLO('yolov8n.pt')
-    rf = Roboflow(api_key="IVPAy5WjFH83nJwqjiTP")
+    rf = Roboflow(api_key=os.getenv('API_KEY'))
     project = rf.workspace().project("license-plate-recognition-rxg4e")
     license_plate_detector = project.version(4).model
 

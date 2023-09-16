@@ -319,36 +319,3 @@ export default function PlateVision() {
     </div>
   );
 }
-
-// const handleDownloadClick = async () => {
-//   await downloadVideo();
-// };
-
-// const handleStartClick = async () => {
-//   await startScript();
-// };
-
-// const handleStopClick = async () => {
-//   await stopScript();
-// };
-
-//   <input
-//   type="file"
-//   ref={fileInputRef}
-//   style={{ display: "none" }}
-//   onChange={handleFileChange}
-// />
-
-// <button onClick={handleUploadClick}>Upload Video</button> - DONE
-// <button onClick={handleDownloadClick}>Download Video</button>
-// <button onClick={handleStartClick}>Start Script</button>
-// <button onClick={handleStopClick}>Stop Script</button>
-// <div className="video-container">
-//   <img
-//     id="realtime-video"
-//     src="http://127.0.0.1:5000/video"
-//     alt="Real-time Video"
-//     width="100"
-//     height="100"
-//   />
-// </div>

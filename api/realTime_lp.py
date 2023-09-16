@@ -9,6 +9,11 @@ import easyocr
 import numpy as np
 from queue import Queue  # Don't forget to import Queue
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 # frame_queue = Queue()  # Initialize frame_queue here
 
 # CAMERA REAL TIME RECOGNITION - USE - WORKING
@@ -20,7 +25,7 @@ def realTime(stop_event, frame_queue):
 
     # Load models
     coco_model = YOLO('yolov8n.pt')
-    rf = Roboflow(api_key="IVPAy5WjFH83nJwqjiTP")
+    rf = Roboflow(api_key=os.getenv('API_KEY'))
     project = rf.workspace().project("license-plate-recognition-rxg4e")
     license_plate_detector = project.version(4).model
 
