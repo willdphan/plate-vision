@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import "app/globals.css";
 import { useState } from "react";
 import { startScript, stopScript, uploadVideo } from "@/app/api";
+import Link from "next/link";
 
 /* @client */
 export default function PlateVision() {
@@ -97,8 +98,23 @@ export default function PlateVision() {
 
   return (
     <div className="flex flex-col items-center justify-center h-full  bg-[#F7F8F9]">
-      <div className="flex flex-row items-center justify-center space-x-20 h-[100vh]">
-        <div className="flex flex-col justify-center h-3/4 w-2/5 border-[1px] border-gray-300 p-10 rounded-lg bg-white drop-shadow-xl	">
+      {/* HEADER */}
+      <div className="absolute top-10 left-10">
+        <Link href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path>
+          </svg>
+        </Link>
+      </div>
+      {/* HEADER */}
+      <div className="flex flex-col lg:flex-row items-center justify-center space-y-10 lg:space-y-0 lg:space-x-20 mt-24 mx-5 ">
+        {/* UPLOAD */}
+        <div className="flex flex-col justify-center h-3/4 lg:w-2/5 border-[1px] border-gray-300 p-10 rounded-lg bg-white drop-shadow-xl	">
           <div className="text-black pb-8 text-lg font-semibold">
             Upload File
           </div>
@@ -198,7 +214,7 @@ export default function PlateVision() {
 
         {/* REAL TIME VIDEO */}
 
-        <div className="flex flex-col justify-center h-3/4 w-2/5 border-[1px] border-gray-300 p-10 rounded-lg bg-white drop-shadow-xl	">
+        <div className="flex flex-col justify-center h-3/4 lg:w-2/5 border-[1px] border-gray-300 p-10 rounded-lg bg-white drop-shadow-xl	">
           <div className="text-black pb-8 text-lg font-semibold">
             Use Camera
           </div>
@@ -268,11 +284,11 @@ export default function PlateVision() {
       </div>
 
       {/* FAQ */}
-      <div className="text-black w-full flex flex-col items-center justify-center  h-[100vh]">
+      <div className="text-black w-full flex flex-col items-center justify-center  h-[100vh] ">
         <div className="w-full px-4   sm:px-6 lg:px-8 lg:py-14 mx-auto ">
           <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
             <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-black">
-              Your questions, answered
+              Your Questions, Answered.
             </h2>
             <p className="mt-1 text-black">
               Questions about the use of Plate Vision
