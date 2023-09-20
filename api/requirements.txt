@@ -5,4 +5,12 @@ numpy==1.24.3
 scipy==1.10.1
 easyocr==1.7.0
 filterpy==1.4.5
-roboflow
+Flask==1.1.2  # replace with the version you are using
+Flask-CORS==3.0.10  # replace with the version you are using
+python-dotenv==0.19.0  # replace with the version you are using
+Werkzeug==1.0.1  # replace with the version you are using
+
+# may have to clone these repos
+# git+https://github.com/your_user/sort.git#egg=sort
+# git+https://github.com/your_user/roboflow.git#egg=roboflow
+p

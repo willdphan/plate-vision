@@ -19,7 +19,7 @@ def licensePlate():
 
     mot_tracker = Sort()
 
-    # load models
+    # load model
     coco_model = YOLO('yolov8n.pt')
     rf = Roboflow(api_key=os.getenv('API_KEY'))
     project = rf.workspace().project("license-plate-recognition-rxg4e")
