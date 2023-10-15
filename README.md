@@ -53,4 +53,4 @@ The Flask server will be running on [http://127.0.0.1:5328](http://127.0.0.1:532
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](plate-vision/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
