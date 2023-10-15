@@ -20,17 +20,11 @@ Plate Vision is a real-time license plate recognition system built with Next.js 
 
 ## Installation
 
-First, install the dependencies:
-
-bash
+First, install the dependencies with either of the below:
 
 `npm install`
 
-or
-
 `yarn`
-
-or
 
 `pnpm install`
 
@@ -39,16 +33,9 @@ or
 
 To run the development server:
 
-
-bash
-
 `npm run dev`
 
-or
-
 `yarn dev`
-
-or
 
 `pnpm dev`
 
@@ -66,4 +53,4 @@ The Flask server will be running on [http://127.0.0.1:5328](http://127.0.0.1:532
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](plate-recog-videos/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](plate-vision/LICENSE) file for details.
